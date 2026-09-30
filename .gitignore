@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Virtual environment
+.venv/
+venv/
+
+# Secrets - never commit your API key
+.env
+.env.local
+
+# Local data (SQLite database, logs, optional saved photos)
+data/
+logs/
+
+# Packaging output
+build/
+dist/
+*.spec
+
+# Editors / OS
+.vscode/
+~$*
+.idea/
+.DS_Store
+Thumbs.db
+
+# ---------------------------------------------------------------------------
+# Kept locally, intentionally not published
+# ---------------------------------------------------------------------------
+
+# Chinese edition of the README (the published README.md is the English one)
+README.zh-CN.md
+
+# Internal developer handoff notes (architecture + backlog), not for release
+DEVELOPER_HANDOFF.md
+
+# Screenshots that are not product UI:
+#   font-check.png                       - font rendering diagnostic
+#   e95fcf5717e05bff03046ad9849a1da.jpg  - a real restaurant photo, used to test image analysis
+screenshots/font-check.png
+screenshots/e95fcf5717e05bff03046ad9849a1da.jpg
+
+# Local backup of the pre-rewrite Git history (kept on disk, never published)
+.git-old/

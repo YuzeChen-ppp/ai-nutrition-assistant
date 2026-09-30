@@ -1,0 +1,19 @@
+﻿python.exe : QFontDatabase: Cannot find font directory G:/??????/.venv/Lib/site-packages/PySide6/lib/fonts.
+At line:16 char:1
++ & $py main.py --smoke-test 2>&1 | Out-File -FilePath "evidence-smoke- ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (QFontDatabase: ...ide6/lib/fonts.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Note that Qt no longer ships fonts. Deploy some (from https://dejavu-fonts.github.io/ for example) or switch to fontcon
+fig.
+2026-09-30 14:44:24 | INFO    | nutrition.main | 启动 AI Nutrition Assistant 1.0.0
+2026-09-30 14:44:24 | INFO    | nutrition.main | 数据库：G:\营养指南\data\nutrition.db
+界面启动自检通过（SMOKE OK）
+  窗口标题     : AI 饮食助手
+  当前页面     : WelcomePage
+  是否已设置资料: False
+  已保存餐数   : 0
+  数据库文件   : G:\营养指南\data\nutrition.db
+  数据目录     : G:\营养指南\data
+  是否已有 API Key: False

@@ -1,0 +1,45 @@
+﻿python.exe : QFontDatabase: Cannot find font directory G:/??????/.venv/Lib/site-packages/PySide6/lib/fonts.
+At line:4 char:1
++ & ".venv\Scripts\python.exe" tools\demo_online_reference.py 2>&1 | Ou ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (QFontDatabase: ...ide6/lib/fonts.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Note that Qt no longer ships fonts. Deploy some (from https://dejavu-fonts.github.io/ for example) or switch to fontcon
+fig.
+2026-09-30 14:44:45 | WARNING | nutrition.worker | online reference for '鸡蛋' failed: ConnectionError: Connection error:
+ offline demo - no socket was opened for this request
+2026-09-30 14:44:45 | WARNING | nutrition.ui | 在线参考查询失败（鸡蛋）：无法连接到 DeepSeek API，请检查网络连接后重试。
+日志文件：G:\营养指南\logs\app.log
+（下面每个场景都会往日志里写一条 warning，界面本身保持安静）
+
+=== 场景 1：有 API Key，但网络不通 ===
+  （HTTP 层被替换成直接抛连接错误，本场景不打开任何 socket）
+  点击之前：在线参考区 = （只有按钮，没有内容），按钮可用 = True，按钮可见 = True
+  点击前的截图（按钮在这里，还没有内容）：screenshots\10a-online-reference-before-click.png
+  点击之后：在线参考区 = （只有按钮，没有内容），按钮可用 = True
+  界面里的报错内容：（没有内容，也没有报错）
+  本地参考/合计是否受影响：否
+  合计仍然是：预计：热量 229 kcal ・ 蛋白质 17.2 g ・ 碳水 15.1 g ・ 脂肪…
+  假 HTTP 层收到的请求次数：1（真实网络请求：0）
+  用户可见的弹窗：无（只有日志）
+  同类错误的中文文案：无法连接到 DeepSeek API，请检查网络连接后重试。
+  点击后的截图（仍然没有在线参考区）：screenshots\10b-online-reference-offline-hidden.png
+
+=== 场景 2：没有 API Key ===
+  按钮可用 = False
+  按钮提示 = 需要先设置 DeepSeek API Key 才能查询在线参考。
+  点击之后：在线参考区 = （只有按钮，没有内容），已发起的查询次数 = 0
+  截图（按钮是灰的）：screenshots\11-online-reference-without-key.png
+
+=== 场景 3：在线参考区有内容时的样子（离线假响应，不发请求）===
+  在线参考区 = 有内容
+  calories_kcal  在线显示：320 kcal
+  protein_g      在线显示：20.0 g
+  carbs_g        在线显示：3.0 g
+  fat_g          在线显示：27.0 g
+  sugar_g        在线显示：未知
+  fibre_g        在线显示：0.0 g
+  sodium_mg      在线显示：124 mg
+  差异提示：在线参考与本地参考差异较大，建议核对份量或烹饪方式。
+  截图：screenshots\12-online-reference-result.png

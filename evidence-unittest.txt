@@ -1,0 +1,641 @@
+﻿python.exe : test_broken_json_raises (tests.test_ai_parser.ExtractJsonTests.test_broken_json_raises) ... ok
+At line:7 char:1
++ & $py -m unittest discover -s tests -t . -v 2>&1 | Out-File -FilePath ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (test_broken_jso..._raises) ... ok:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+test_empty_answer_raises (tests.test_ai_parser.ExtractJsonTests.test_empty_answer_raises) ... ok
+test_json_with_surrounding_prose (tests.test_ai_parser.ExtractJsonTests.test_json_with_surrounding_prose) ... ok
+test_markdown_fences (tests.test_ai_parser.ExtractJsonTests.test_markdown_fences) ... ok
+test_plain_json (tests.test_ai_parser.ExtractJsonTests.test_plain_json) ... ok
+test_top_level_array (tests.test_ai_parser.ExtractJsonTests.test_top_level_array) ... ok
+test_bare_list_is_accepted (tests.test_ai_parser.FoodAnalysisParseTests.test_bare_list_is_accepted) ... ok
+test_empty_food_list_raises_no_food_error (tests.test_ai_parser.FoodAnalysisParseTests.test_empty_food_list_raises_no_f
+ood_error) ... ok
+test_fenced_answer_is_parsed (tests.test_ai_parser.FoodAnalysisParseTests.test_fenced_answer_is_parsed) ... ok
+test_invalid_numbers_raise_response_error (tests.test_ai_parser.FoodAnalysisParseTests.test_invalid_numbers_raise_respo
+nse_error) ... ok
+test_missing_food_list_raises (tests.test_ai_parser.FoodAnalysisParseTests.test_missing_food_list_raises) ... ok
+test_single_item_object_is_accepted (tests.test_ai_parser.FoodAnalysisParseTests.test_single_item_object_is_accepted) .
+.. ok
+test_standard_payload (tests.test_ai_parser.FoodAnalysisParseTests.test_standard_payload) ... ok
+test_recommendation (tests.test_ai_parser.RecommendationParseTests.test_recommendation) ... ok
+test_recommendation_without_foods_raises (tests.test_ai_parser.RecommendationParseTests.test_recommendation_without_foo
+ds_raises) ... ok
+test_api_key_is_never_touched (tests.test_ai_settings_store.AiSettingsStoreTests.test_api_key_is_never_touched) ... ok
+test_base_url_without_an_http_scheme_is_rejected (tests.test_ai_settings_store.AiSettingsStoreTests.test_base_url_witho
+ut_an_http_scheme_is_rejected) ... ok
+test_blank_base_url_falls_back_to_the_default (tests.test_ai_settings_store.AiSettingsStoreTests.test_blank_base_url_fa
+lls_back_to_the_default) ... ok
+test_blank_model_falls_back_to_the_default (tests.test_ai_settings_store.AiSettingsStoreTests.test_blank_model_falls_ba
+ck_to_the_default) ... ok
+test_clear_restores_the_defaults (tests.test_ai_settings_store.AiSettingsStoreTests.test_clear_restores_the_defaults) .
+.. ok
+test_defaults_are_kept_when_nothing_was_saved (tests.test_ai_settings_store.AiSettingsStoreTests.test_defaults_are_kept
+_when_nothing_was_saved) ... ok
+test_environment_wins_when_the_override_flag_is_on (tests.test_ai_settings_store.AiSettingsStoreTests.test_environment_
+wins_when_the_override_flag_is_on) ... ok
+test_flag_accepts_the_usual_truthy_spellings (tests.test_ai_settings_store.AiSettingsStoreTests.test_flag_accepts_the_u
+sual_truthy_spellings) ... ok
+test_flag_is_off_by_default (tests.test_ai_settings_store.AiSettingsStoreTests.test_flag_is_off_by_default) ... ok
+test_saved_values_survive_a_new_store_instance (tests.test_ai_settings_store.AiSettingsStoreTests.test_saved_values_sur
+vive_a_new_store_instance) ... ok
+test_saved_values_win_over_the_environment_defaults (tests.test_ai_settings_store.AiSettingsStoreTests.test_saved_value
+s_win_over_the_environment_defaults) ... ok
+test_trailing_slashes_are_removed_from_the_base_url (tests.test_ai_settings_store.AiSettingsStoreTests.test_trailing_sl
+ashes_are_removed_from_the_base_url) ... ok
+test_unknown_effort_is_normalised_instead_of_stored_verbatim (tests.test_ai_settings_store.AiSettingsStoreTests.test_un
+known_effort_is_normalised_instead_of_stored_verbatim) ... ok
+test_unknown_thinking_value_falls_back_to_disabled (tests.test_ai_settings_store.AiSettingsStoreTests.test_unknown_thin
+king_value_falls_back_to_disabled) ... ok
+test_a_restart_keeps_the_saved_model_and_effort (tests.test_ai_settings_store.RestartTests.test_a_restart_keeps_the_sav
+ed_model_and_effort) ... ok
+test_delete_removes_everywhere (tests.test_api_key.ApiKeyStoreTests.test_delete_removes_everywhere) ... ok
+test_environment_variable_wins (tests.test_api_key.ApiKeyStoreTests.test_environment_variable_wins) ... ok
+test_falls_back_to_env_file_when_unavailable (tests.test_api_key.ApiKeyStoreTests.test_falls_back_to_env_file_when_unav
+ailable) ... ok
+test_mask_never_reveals_the_middle (tests.test_api_key.ApiKeyStoreTests.test_mask_never_reveals_the_middle) ... ok
+test_save_uses_the_credential_manager_first (tests.test_api_key.ApiKeyStoreTests.test_save_uses_the_credential_manager_
+first) ... ok
+test_saving_an_empty_key_is_rejected (tests.test_api_key.ApiKeyStoreTests.test_saving_an_empty_key_is_rejected) ... ok
+test_source_labels_are_chinese (tests.test_api_key.ApiKeyStoreTests.test_source_labels_are_chinese) ... ok
+test_windows_store_reports_availability (tests.test_api_key.ApiKeyStoreTests.test_windows_store_reports_availability) .
+.. ok
+test_delete_empties_the_value (tests.test_api_key.EnvFileStoreTests.test_delete_empties_the_value) ... ok
+test_empty_value_counts_as_missing (tests.test_api_key.EnvFileStoreTests.test_empty_value_counts_as_missing) ... ok
+test_missing_file_has_no_key (tests.test_api_key.EnvFileStoreTests.test_missing_file_has_no_key) ... ok
+test_other_lines_are_preserved (tests.test_api_key.EnvFileStoreTests.test_other_lines_are_preserved) ... ok
+test_write_and_read (tests.test_api_key.EnvFileStoreTests.test_write_and_read) ... ok
+test_database_never_contains_the_api_key (tests.test_api_key.LeakTests.test_database_never_contains_the_api_key) ... ok
+test_logs_never_contain_the_api_key (tests.test_api_key.LeakTests.test_logs_never_contain_the_api_key) ... ok
+test_settings_pick_up_a_saved_key (tests.test_api_key.SettingsIntegrationTests.test_settings_pick_up_a_saved_key) ... o
+k
+test_settings_without_a_key (tests.test_api_key.SettingsIntegrationTests.test_settings_without_a_key) ... ok
+test_log_dir_is_writable (tests.test_config.DataFolderTests.test_log_dir_is_writable) ... ok
+test_override_folder_is_used (tests.test_config.DataFolderTests.test_override_folder_is_used) ... ok
+test_resource_path_finds_the_icon (tests.test_config.DataFolderTests.test_resource_path_finds_the_icon) ... ok
+test_unusable_override_falls_back_instead_of_crashing (tests.test_config.DataFolderTests.test_unusable_override_falls_b
+ack_instead_of_crashing) ... Using fallback data folder: G:\营养指南\data
+ok
+test_empty_key_is_reported_as_missing (tests.test_config.EnvironmentTests.test_empty_key_is_reported_as_missing) ... ok
+test_env_candidates_are_paths (tests.test_config.EnvironmentTests.test_env_candidates_are_paths) ... ok
+test_masked_key_never_reveals_the_key (tests.test_config.EnvironmentTests.test_masked_key_never_reveals_the_key) ... ok
+test_settings_defaults (tests.test_config.EnvironmentTests.test_settings_defaults) ... ok
+test_food_item_without_name_is_rejected (tests.test_database.MealTests.test_food_item_without_name_is_rejected) ... ok
+test_insert_and_retrieve_meal (tests.test_database.MealTests.test_insert_and_retrieve_meal) ... ok
+test_meal_without_items_is_rejected (tests.test_database.MealTests.test_meal_without_items_is_rejected) ... ok
+test_meals_for_date (tests.test_database.MealTests.test_meals_for_date) ... ok
+test_unknown_meal_returns_none (tests.test_database.MealTests.test_unknown_meal_returns_none) ... ok
+test_old_database_gains_the_new_table_and_keeps_its_data (tests.test_database.MigrationTests.test_old_database_gains_th
+e_new_table_and_keeps_its_data) ... ok
+test_data_survives_reopening (tests.test_database.PersistenceTests.test_data_survives_reopening) ... ok
+test_missing_profile_returns_none (tests.test_database.ProfileTests.test_missing_profile_returns_none) ... ok
+test_profile_is_updated_not_duplicated (tests.test_database.ProfileTests.test_profile_is_updated_not_duplicated) ... ok
+test_profile_round_trip (tests.test_database.ProfileTests.test_profile_round_trip) ... ok
+test_daily_totals_use_sql_aggregation (tests.test_database.TotalsTests.test_daily_totals_use_sql_aggregation) ... ok
+test_empty_day_is_zero (tests.test_database.TotalsTests.test_empty_day_is_zero) ... ok
+test_recent_days_summary (tests.test_database.TotalsTests.test_recent_days_summary) ... ok
+test_delete_food_item_recalculates_totals (tests.test_database.UpdateDeleteTests.test_delete_food_item_recalculates_tot
+als) ... ok
+test_delete_meal_cascades_to_food_items (tests.test_database.UpdateDeleteTests.test_delete_meal_cascades_to_food_items)
+ ... ok
+test_update_food_item (tests.test_database.UpdateDeleteTests.test_update_food_item) ... ok
+test_update_meal_type (tests.test_database.UpdateDeleteTests.test_update_meal_type) ... ok
+test_connection_check_lists_models (tests.test_deepseek_client.ClientRequestTests.test_connection_check_lists_models) .
+.. ok
+test_empty_answer_is_retried_then_reported (tests.test_deepseek_client.ClientRequestTests.test_empty_answer_is_retried_
+then_reported) ... Empty answer from DeepSeek (attempt 1/2)
+Empty answer from DeepSeek (attempt 2/2)
+ok
+test_empty_description_is_rejected_without_calling_the_api (tests.test_deepseek_client.ClientRequestTests.test_empty_de
+scription_is_rejected_without_calling_the_api) ... ok
+test_image_request_uses_a_data_url_content_block (tests.test_deepseek_client.ClientRequestTests.test_image_request_uses
+_a_data_url_content_block) ... ok
+test_missing_key_raises_before_any_request (tests.test_deepseek_client.ClientRequestTests.test_missing_key_raises_befor
+e_any_request) ... ok
+test_recommendation_sends_json_context (tests.test_deepseek_client.ClientRequestTests.test_recommendation_sends_json_co
+ntext) ... ok
+test_text_analysis_request_shape (tests.test_deepseek_client.ClientRequestTests.test_text_analysis_request_shape) ... o
+k
+test_authentication_error (tests.test_deepseek_client.ErrorTranslationTests.test_authentication_error) ... ok
+test_connection_error (tests.test_deepseek_client.ErrorTranslationTests.test_connection_error) ... ok
+test_describe_api_error_never_leaks_a_traceback (tests.test_deepseek_client.ErrorTranslationTests.test_describe_api_err
+or_never_leaks_a_traceback) ... ok
+test_permission_denied (tests.test_deepseek_client.ErrorTranslationTests.test_permission_denied) ... ok
+test_rate_limit_and_insufficient_balance (tests.test_deepseek_client.ErrorTranslationTests.test_rate_limit_and_insuffic
+ient_balance) ... ok
+test_server_error (tests.test_deepseek_client.ErrorTranslationTests.test_server_error) ... ok
+test_timeout (tests.test_deepseek_client.ErrorTranslationTests.test_timeout) ... ok
+test_output_language_is_a_parameter (tests.test_deepseek_client.OnlineReferenceRequestTests.test_output_language_is_a_p
+arameter) ... ok
+test_request_shape (tests.test_deepseek_client.OnlineReferenceRequestTests.test_request_shape) ... ok
+test_too_short_names_are_rejected_without_a_request (tests.test_deepseek_client.OnlineReferenceRequestTests.test_too_sh
+ort_names_are_rejected_without_a_request) ... ok
+test_transport_errors_are_translated (tests.test_deepseek_client.OnlineReferenceRequestTests.test_transport_errors_are_
+translated) ... ok
+test_unusable_answers_raise_the_hide_signal (tests.test_deepseek_client.OnlineReferenceRequestTests.test_unusable_answe
+rs_raise_the_hide_signal) ... Empty answer from DeepSeek (attempt 1/1)
+ok
+test_connection_check_pings_the_selected_model (tests.test_deepseek_client.ReasoningEffortPayloadTests.test_connection_
+check_pings_the_selected_model) ... ok
+test_medium_effort_is_passed_through (tests.test_deepseek_client.ReasoningEffortPayloadTests.test_medium_effort_is_pass
+ed_through) ... ok
+test_model_without_thinking_support_sends_neither_parameter (tests.test_deepseek_client.ReasoningEffortPayloadTests.tes
+t_model_without_thinking_support_sends_neither_parameter) ... ok
+test_thinking_off_keeps_the_configured_budget (tests.test_deepseek_client.ReasoningEffortPayloadTests.test_thinking_off
+_keeps_the_configured_budget) ... ok
+test_thinking_off_sends_no_effort (tests.test_deepseek_client.ReasoningEffortPayloadTests.test_thinking_off_sends_no_ef
+fort) ... ok
+test_thinking_on_raises_the_output_budget (tests.test_deepseek_client.ReasoningEffortPayloadTests.test_thinking_on_rais
+es_the_output_budget) ... ok
+test_thinking_on_sends_the_mapped_effort (tests.test_deepseek_client.ReasoningEffortPayloadTests.test_thinking_on_sends
+_the_mapped_effort) ... ok
+test_truncated_answer_is_reported_without_a_retry (tests.test_deepseek_client.ReasoningEffortPayloadTests.test_truncate
+d_answer_is_reported_without_a_retry) ... Answer truncated at max_tokens (model=deepseek-flash, thinking=on)
+ok
+test_unknown_effort_falls_back_to_the_default (tests.test_deepseek_client.ReasoningEffortPayloadTests.test_unknown_effo
+rt_falls_back_to_the_default) ... ok
+test_confirm_requires_valid_rows (tests.test_dialogs.ConfirmDialogTests.test_confirm_requires_valid_rows) ... QFontData
+base: Cannot find font directory G:/??????/.venv/Lib/site-packages/PySide6/lib/fonts.
+Note that Qt no longer ships fonts. Deploy some (from https://dejavu-fonts.github.io/ for example) or switch to fontcon
+fig.
+ok
+test_removing_the_last_row_blocks_confirm (tests.test_dialogs.ConfirmDialogTests.test_removing_the_last_row_blocks_conf
+irm) ... ok
+test_total_and_warning_text (tests.test_dialogs.ConfirmDialogTests.test_total_and_warning_text) ... ok
+test_total_equals_the_sum_of_the_rows (tests.test_dialogs.ConfirmDialogTests.test_total_equals_the_sum_of_the_rows)
+回归测试：披萨 4,200 mg 钠 + 酱 180 mg 钠 的合计必须是 4,380。 ... ok
+test_editing_fields_returns_valid_item (tests.test_dialogs.FoodItemEditDialogTests.test_editing_fields_returns_valid_it
+em) ... ok
+test_empty_name_is_rejected (tests.test_dialogs.FoodItemEditDialogTests.test_empty_name_is_rejected) ... ok
+test_local_reference_values_can_be_applied (tests.test_dialogs.FoodItemEditDialogTests.test_local_reference_values_can_
+be_applied) ... ok
+test_rescaling_can_be_switched_off (tests.test_dialogs.FoodItemEditDialogTests.test_rescaling_can_be_switched_off) ... 
+ok
+test_unknown_food_has_no_reference (tests.test_dialogs.FoodItemEditDialogTests.test_unknown_food_has_no_reference) ... 
+ok
+test_weight_change_rescales_the_nutrients (tests.test_dialogs.FoodItemEditDialogTests.test_weight_change_rescales_the_n
+utrients) ... ok
+test_collects_text_and_meal_type (tests.test_dialogs.ManualEntryDialogTests.test_collects_text_and_meal_type) ... ok
+test_empty_text_is_rejected (tests.test_dialogs.ManualEntryDialogTests.test_empty_text_is_rejected) ... ok
+test_values_round_trip (tests.test_dialogs.MealEditDialogTests.test_values_round_trip) ... ok
+test_missing_preview_does_not_crash (tests.test_dialogs.PhotoEntryDialogTests.test_missing_preview_does_not_crash) ... 
+ok
+test_preview_and_note (tests.test_dialogs.PhotoEntryDialogTests.test_preview_and_note) ... ok
+test_helper_functions (tests.test_dialogs.ProfileFormTests.test_helper_functions) ... ok
+test_set_profile_then_read_back (tests.test_dialogs.ProfileFormTests.test_set_profile_then_read_back) ... ok
+test_recommendation_is_displayed (tests.test_dialogs.RecommendationDialogTests.test_recommendation_is_displayed) ... ok
+test_close_values_produce_no_notes (tests.test_food_data.CompareTests.test_close_values_produce_no_notes) ... ok
+test_unknown_food_is_not_flagged (tests.test_food_data.CompareTests.test_unknown_food_is_not_flagged) ... ok
+test_wildly_wrong_values_are_flagged (tests.test_food_data.CompareTests.test_wildly_wrong_values_are_flagged) ... ok
+test_estimate_scales_to_weight (tests.test_food_data.EstimateTests.test_estimate_scales_to_weight) ... ok
+test_estimate_unknown_food_returns_none (tests.test_food_data.EstimateTests.test_estimate_unknown_food_returns_none) ..
+. ok
+test_estimate_without_weight_returns_none (tests.test_food_data.EstimateTests.test_estimate_without_weight_returns_none
+) ... ok
+test_chinese_alias (tests.test_food_data.LookupTests.test_chinese_alias) ... ok
+test_english_name (tests.test_food_data.LookupTests.test_english_name) ... ok
+test_normalisation (tests.test_food_data.LookupTests.test_normalisation) ... ok
+test_table_has_no_duplicate_keys (tests.test_food_data.LookupTests.test_table_has_no_duplicate_keys) ... ok
+test_unknown_food_returns_none (tests.test_food_data.LookupTests.test_unknown_food_returns_none) ... ok
+test_chinese_date (tests.test_i18n.DateFormatTests.test_chinese_date) ... ok
+test_invalid_date_is_returned_unchanged (tests.test_i18n.DateFormatTests.test_invalid_date_is_returned_unchanged) ... o
+k
+test_every_ui_python_file_is_readable_as_utf8 (tests.test_i18n.NoEnglishUiTests.test_every_ui_python_file_is_readable_a
+s_utf8) ... ok
+test_ui_files_contain_no_forbidden_english_text (tests.test_i18n.NoEnglishUiTests.test_ui_files_contain_no_forbidden_en
+glish_text) ... ok
+test_broken_placeholder_does_not_raise (tests.test_i18n.TranslationTableTests.test_broken_placeholder_does_not_raise) .
+.. ok
+test_default_language_is_chinese (tests.test_i18n.TranslationTableTests.test_default_language_is_chinese) ... ok
+test_every_key_used_in_the_code_exists (tests.test_i18n.TranslationTableTests.test_every_key_used_in_the_code_exists) .
+.. ok
+test_missing_key_falls_back_to_the_key_itself (tests.test_i18n.TranslationTableTests.test_missing_key_falls_back_to_the
+_key_itself) ... ok
+test_placeholder_substitution (tests.test_i18n.TranslationTableTests.test_placeholder_substitution) ... ok
+test_unknown_language_keeps_chinese (tests.test_i18n.TranslationTableTests.test_unknown_language_keeps_chinese) ... ok
+test_corrupt_image_is_rejected (tests.test_images.ImagePreparationTests.test_corrupt_image_is_rejected) ... ok
+test_human_size (tests.test_images.ImagePreparationTests.test_human_size) ... ok
+test_large_photo_is_resized (tests.test_images.ImagePreparationTests.test_large_photo_is_resized) ... ok
+test_missing_file_is_rejected (tests.test_images.ImagePreparationTests.test_missing_file_is_rejected) ... ok
+test_png_with_transparency_is_flattened (tests.test_images.ImagePreparationTests.test_png_with_transparency_is_flattene
+d) ... ok
+test_small_jpeg_is_encoded (tests.test_images.ImagePreparationTests.test_small_jpeg_is_encoded) ... ok
+test_unsupported_extension_is_rejected (tests.test_images.ImagePreparationTests.test_unsupported_extension_is_rejected)
+ ... ok
+test_webp_is_supported (tests.test_images.ImagePreparationTests.test_webp_is_supported) ... ok
+test_empty_model_name_is_unsupported (tests.test_model_catalog.CapabilityTests.test_empty_model_name_is_unsupported) ..
+. ok
+test_flash_model_supports_thinking_and_vision (tests.test_model_catalog.CapabilityTests.test_flash_model_supports_think
+ing_and_vision) ... ok
+test_model_name_is_matched_case_insensitively (tests.test_model_catalog.CapabilityTests.test_model_name_is_matched_case
+_insensitively) ... ok
+test_picker_offers_the_known_models (tests.test_model_catalog.CapabilityTests.test_picker_offers_the_known_models) ... 
+ok
+test_pro_model_supports_thinking_without_vision (tests.test_model_catalog.CapabilityTests.test_pro_model_supports_think
+ing_without_vision) ... ok
+test_unknown_deepseek_model_keeps_thinking_support (tests.test_model_catalog.CapabilityTests.test_unknown_deepseek_mode
+l_keeps_thinking_support) ... ok
+test_unknown_model_is_treated_as_unsupported (tests.test_model_catalog.CapabilityTests.test_unknown_model_is_treated_as
+_unsupported) ... ok
+test_every_level_maps_to_a_distinct_api_value (tests.test_model_catalog.EffortMappingTests.test_every_level_maps_to_a_d
+istinct_api_value) ... ok
+test_known_level_is_kept (tests.test_model_catalog.EffortMappingTests.test_known_level_is_kept) ... ok
+test_level_is_normalised_from_loose_input (tests.test_model_catalog.EffortMappingTests.test_level_is_normalised_from_lo
+ose_input) ... ok
+test_levels_map_to_low_medium_max (tests.test_model_catalog.EffortMappingTests.test_levels_map_to_low_medium_max) ... o
+k
+test_missing_level_falls_back_to_the_default (tests.test_model_catalog.EffortMappingTests.test_missing_level_falls_back
+_to_the_default) ... ok
+test_unknown_level_falls_back_to_the_default (tests.test_model_catalog.EffortMappingTests.test_unknown_level_falls_back
+_to_the_default) ... ok
+test_impossible_energy_density_is_flagged (tests.test_nutrition.HelperTests.test_impossible_energy_density_is_flagged) 
+... ok
+test_low_confidence_is_flagged (tests.test_nutrition.HelperTests.test_low_confidence_is_flagged) ... ok
+test_rescale_halves_every_value (tests.test_nutrition.HelperTests.test_rescale_halves_every_value) ... ok
+test_rescale_without_weights_keeps_values (tests.test_nutrition.HelperTests.test_rescale_without_weights_keeps_values) 
+... ok
+test_progress_fraction_is_clamped (tests.test_nutrition.RemainingTests.test_progress_fraction_is_clamped) ... ok
+test_remaining_calories (tests.test_nutrition.RemainingTests.test_remaining_calories) ... ok
+test_remaining_is_negative_when_over_target (tests.test_nutrition.RemainingTests.test_remaining_is_negative_when_over_t
+arget) ... ok
+test_empty_day_is_zero (tests.test_nutrition.SumTests.test_empty_day_is_zero) ... ok
+test_macros_are_summed (tests.test_nutrition.SumTests.test_macros_are_summed) ... ok
+test_rows_from_database_style_dicts_work (tests.test_nutrition.SumTests.test_rows_from_database_style_dicts_work) ... o
+k
+test_three_foods_sum_to_1500_kcal (tests.test_nutrition.SumTests.test_three_foods_sum_to_1500_kcal) ... ok
+test_no_database_write_happens_while_querying (tests.test_online_reference.IsolationTests.test_no_database_write_happen
+s_while_querying) ... ok
+test_online_values_are_not_written_to_the_database (tests.test_online_reference.IsolationTests.test_online_values_are_n
+ot_written_to_the_database) ... ok
+test_online_values_do_not_change_the_daily_totals (tests.test_online_reference.IsolationTests.test_online_values_do_not
+_change_the_daily_totals) ... ok
+test_online_values_do_not_reach_the_confirmed_items (tests.test_online_reference.IsolationTests.test_online_values_do_n
+ot_reach_the_confirmed_items) ... ok
+test_the_window_never_exposes_the_online_value_for_calculation (tests.test_online_reference.IsolationTests.test_the_win
+dow_never_exposes_the_online_value_for_calculation)
+窗口/对话框不提供任何把在线值取出来做计算的接口。 ... ok
+test_analysis_and_save_never_query_the_online_reference (tests.test_online_reference.NoRequestWithoutAClickTests.test_a
+nalysis_and_save_never_query_the_online_reference)
+分析 → 确认 → 保存 的整条流程里，一次在线请求都不能发生。 ... ok
+test_clicking_the_button_sends_exactly_one_request (tests.test_online_reference.NoRequestWithoutAClickTests.test_clicki
+ng_the_button_sends_exactly_one_request) ... ok
+test_editing_numbers_never_queries_the_online_reference (tests.test_online_reference.NoRequestWithoutAClickTests.test_e
+diting_numbers_never_queries_the_online_reference) ... ok
+test_switching_dates_and_history_never_query_the_online_reference (tests.test_online_reference.NoRequestWithoutAClickTe
+sts.test_switching_dates_and_history_never_query_the_online_reference) ... ok
+test_the_button_is_visible_before_it_is_ever_used (tests.test_online_reference.NoRequestWithoutAClickTests.test_the_but
+ton_is_visible_before_it_is_ever_used)
+回归测试：按钮必须一开始就在窗口里，否则用户根本不知道有这个功能。 ... ok
+test_the_edit_dialog_also_shows_the_button_right_away (tests.test_online_reference.NoRequestWithoutAClickTests.test_the
+_edit_dialog_also_shows_the_button_right_away) ... This plugin does not support propagateSizeHints()
+ok
+test_absurd_value_is_rejected (tests.test_online_reference.OnlineReferenceSchemaTests.test_absurd_value_is_rejected) ..
+. ok
+test_an_answer_without_any_value_is_rejected (tests.test_online_reference.OnlineReferenceSchemaTests.test_an_answer_wit
+hout_any_value_is_rejected) ... ok
+test_boundary_values_are_accepted (tests.test_online_reference.OnlineReferenceSchemaTests.test_boundary_values_are_acce
+pted) ... ok
+test_field_names_match_the_local_table (tests.test_online_reference.OnlineReferenceSchemaTests.test_field_names_match_t
+he_local_table) ... ok
+test_impossible_macros_are_rejected (tests.test_online_reference.OnlineReferenceSchemaTests.test_impossible_macros_are_
+rejected) ... ok
+test_kcal_string_is_accepted_but_junk_is_rejected (tests.test_online_reference.OnlineReferenceSchemaTests.test_kcal_str
+ing_is_accepted_but_junk_is_rejected) ... ok
+test_missing_fields_stay_null_and_never_become_zero (tests.test_online_reference.OnlineReferenceSchemaTests.test_missin
+g_fields_stay_null_and_never_become_zero) ... ok
+test_negative_value_is_rejected (tests.test_online_reference.OnlineReferenceSchemaTests.test_negative_value_is_rejected
+) ... ok
+test_out_of_range_numbers_are_rejected_not_truncated (tests.test_online_reference.OnlineReferenceSchemaTests.test_out_o
+f_range_numbers_are_rejected_not_truncated)
+1e400 / 无限大必须是「非法响应」，而不是被截断成一个小数字。 ... ok
+test_units_are_converted_during_parsing (tests.test_online_reference.OnlineReferenceSchemaTests.test_units_are_converte
+d_during_parsing) ... ok
+test_unparsable_answers_raise_the_hide_signal (tests.test_online_reference.OnlineReferenceSchemaTests.test_unparsable_a
+nswers_raise_the_hide_signal) ... ok
+test_valid_answer_is_accepted (tests.test_online_reference.OnlineReferenceSchemaTests.test_valid_answer_is_accepted) ..
+. ok
+test_values_stated_per_kg_are_scaled_to_100_g (tests.test_online_reference.OnlineReferenceSchemaTests.test_values_state
+d_per_kg_are_scaled_to_100_g) ... ok
+test_zero_is_kept_and_is_not_unknown (tests.test_online_reference.OnlineReferenceSchemaTests.test_zero_is_kept_and_is_n
+ot_unknown) ... ok
+test_both_sides_are_per_100g_and_side_by_side (tests.test_online_reference.ReferenceComparisonTests.test_both_sides_are
+_per_100g_and_side_by_side) ... ok
+test_difference_above_threshold_triggers_the_hint (tests.test_online_reference.ReferenceComparisonTests.test_difference
+_above_threshold_triggers_the_hint) ... ok
+test_difference_below_threshold_shows_no_hint (tests.test_online_reference.ReferenceComparisonTests.test_difference_bel
+ow_threshold_shows_no_hint) ... ok
+test_threshold_helper_exact_behaviour (tests.test_online_reference.ReferenceComparisonTests.test_threshold_helper_exact
+_behaviour) ... ok
+test_unknown_online_field_is_none_not_zero (tests.test_online_reference.ReferenceComparisonTests.test_unknown_online_fi
+eld_is_none_not_zero) ... ok
+test_unknown_weight_falls_back_to_the_local_table (tests.test_online_reference.ReferenceComparisonTests.test_unknown_we
+ight_falls_back_to_the_local_table) ... ok
+test_unlisted_food_still_compares_the_item_itself (tests.test_online_reference.ReferenceComparisonTests.test_unlisted_f
+ood_still_compares_the_item_itself) ... ok
+test_401_hides_the_online_section (tests.test_online_reference.SilentFailureTests.test_401_hides_the_online_section) ..
+. query online nutrition reference failed: 尚未设置 DeepSeek API Key。请前往「设置」输入后重试。
+在线参考查询失败（egg）：尚未设置 DeepSeek API Key。请前往「设置」输入后重试。
+ok
+test_429_hides_the_online_section (tests.test_online_reference.SilentFailureTests.test_429_hides_the_online_section) ..
+. query online nutrition reference failed: 请求过于频繁，请等几秒后重试。
+在线参考查询失败（egg）：请求过于频繁，请等几秒后重试。
+ok
+test_5xx_hides_the_online_section (tests.test_online_reference.SilentFailureTests.test_5xx_hides_the_online_section) ..
+. query online nutrition reference failed: AI 服务暂时不可用，请稍后重试。
+在线参考查询失败（egg）：AI 服务暂时不可用，请稍后重试。
+ok
+test_a_broken_job_factory_still_hides_instead_of_raising (tests.test_online_reference.SilentFailureTests.test_a_broken_
+job_factory_still_hides_instead_of_raising)
+工厂自己出错时也必须走「静默隐藏」这条路，而不是让界面崩掉。 ... ok
+test_empty_answer_hides_the_online_section (tests.test_online_reference.SilentFailureTests.test_empty_answer_hides_the_
+online_section) ... query online nutrition reference failed: empty response
+在线参考查询失败（egg）：在线参考暂时不可用。
+ok
+test_failure_logs_one_warning_and_shows_no_dialog (tests.test_online_reference.SilentFailureTests.test_failure_logs_one
+_warning_and_shows_no_dialog) ... query online nutrition reference failed: 无法连接到 DeepSeek API，请检查网络连接后重试。
+ok
+test_illegal_values_hide_the_online_section (tests.test_online_reference.SilentFailureTests.test_illegal_values_hide_th
+e_online_section) ... query online nutrition reference failed: validation failed: [{'type': 'greater_than_equal', 'loc'
+: ('calories_kcal',), 'msg': 'Input should be greater than or equal to 0', 'input': -500.0, 'ctx': {'ge': 0.0}, 'url': 
+'https://errors.pydantic.dev/2.13/v/greater_than_equal'}]
+在线参考查询失败（egg）：在线参考暂时不可用。
+ok
+test_invalid_json_hides_the_online_section (tests.test_online_reference.SilentFailureTests.test_invalid_json_hides_the_
+online_section) ... query online nutrition reference failed: could not find JSON in the answer: 'I could not find this 
+food, sorry'
+在线参考查询失败（egg）：在线参考暂时不可用。
+ok
+test_network_error_hides_the_online_section (tests.test_online_reference.SilentFailureTests.test_network_error_hides_th
+e_online_section) ... query online nutrition reference failed: 无法连接到 DeepSeek API，请检查网络连接后重试。
+在线参考查询失败（egg）：无法连接到 DeepSeek API，请检查网络连接后重试。
+ok
+test_offline_failure_leaves_the_dialog_untouched (tests.test_online_reference.SilentFailureTests.test_offline_failure_l
+eaves_the_dialog_untouched) ... query online nutrition reference failed: 无法连接到 DeepSeek API，请检查网络连接后重试。
+在线参考查询失败（egg）：无法连接到 DeepSeek API，请检查网络连接后重试。
+ok
+test_timeout_hides_the_online_section (tests.test_online_reference.SilentFailureTests.test_timeout_hides_the_online_sec
+tion) ... query online nutrition reference failed: AI 服务响应超时，请稍后重试。
+在线参考查询失败（egg）：AI 服务响应超时，请稍后重试。
+ok
+test_an_unlisted_food_says_the_left_side_is_the_record (tests.test_online_reference.UnknownVersusZeroTests.test_an_unli
+sted_food_says_the_left_side_is_the_record) ... ok
+test_kcal_and_sodium_use_their_own_units (tests.test_online_reference.UnknownVersusZeroTests.test_kcal_and_sodium_use_t
+heir_own_units) ... ok
+test_missing_field_never_shows_zero (tests.test_online_reference.UnknownVersusZeroTests.test_missing_field_never_shows_
+zero) ... ok
+test_missing_field_shows_unknown (tests.test_online_reference.UnknownVersusZeroTests.test_missing_field_shows_unknown) 
+... ok
+test_real_zero_shows_zero (tests.test_online_reference.UnknownVersusZeroTests.test_real_zero_shows_zero) ... ok
+test_the_card_says_which_side_is_which (tests.test_online_reference.UnknownVersusZeroTests.test_the_card_says_which_sid
+e_is_which)
+两边口径必须写清楚：左边是记录换算出的每 100 g，右边是在线值。 ... ok
+test_button_is_disabled_and_explains_itself (tests.test_online_reference.WithoutApiKeyTests.test_button_is_disabled_and
+_explains_itself) ... ok
+test_main_window_returns_a_factory_with_a_key (tests.test_online_reference.WithoutApiKeyTests.test_main_window_returns_
+a_factory_with_a_key) ... ok
+test_main_window_returns_no_factory_without_a_key (tests.test_online_reference.WithoutApiKeyTests.test_main_window_retu
+rns_no_factory_without_a_key) ... ok
+test_api_errors_arrive_as_user_messages (tests.test_online_reference.WorkerFailureMessageTests.test_api_errors_arrive_a
+s_user_messages) ... query online nutrition reference failed: AI 返回的内容无法解析，请重试或改用手动输入。
+ok
+test_a_late_answer_never_reopens_a_closed_dialog (tests.test_online_reference_close.ClosingDuringARequestTests.test_a_l
+ate_answer_never_reopens_a_closed_dialog) ... ok
+test_a_request_slower_than_the_wait_still_never_crashes (tests.test_online_reference_close.ClosingDuringARequestTests.t
+est_a_request_slower_than_the_wait_still_never_crashes)
+比等待上限还慢的请求：窗口照常关闭，线程自己收尾，进程不崩。 ... ok
+test_closing_does_not_touch_the_local_values (tests.test_online_reference_close.ClosingDuringARequestTests.test_closing
+_does_not_touch_the_local_values) ... ok
+test_closing_the_dialog_while_the_request_runs_does_not_crash (tests.test_online_reference_close.ClosingDuringARequestT
+ests.test_closing_the_dialog_while_the_request_runs_does_not_crash) ... ok
+test_shutdown_is_idempotent (tests.test_online_reference_close.ClosingDuringARequestTests.test_shutdown_is_idempotent) 
+... ok
+test_shutdown_is_safe_without_a_request (tests.test_online_reference_close.ClosingDuringARequestTests.test_shutdown_is_
+safe_without_a_request) ... ok
+test_the_edit_dialog_closes_the_same_way (tests.test_online_reference_close.ClosingDuringARequestTests.test_the_edit_di
+alog_closes_the_same_way) ... ok
+test_the_wait_stays_bounded (tests.test_online_reference_close.ClosingDuringARequestTests.test_the_wait_stays_bounded)
+等待是有上限的：请求再慢也不能把窗口永久卡住。 ... ok
+test_default_list_has_no_specialty_food (tests.test_purchase.DefaultsTests.test_default_list_has_no_specialty_food) ...
+ ok
+test_default_list_is_common_supermarket_food (tests.test_purchase.DefaultsTests.test_default_list_is_common_supermarket
+_food) ... ok
+test_difficulty_labels (tests.test_purchase.DefaultsTests.test_difficulty_labels) ... ok
+test_labels (tests.test_purchase.DefaultsTests.test_labels) ... ok
+test_exact_and_contained_matches (tests.test_purchase.InconvenientMatchTests.test_exact_and_contained_matches) ... ok
+test_no_match_when_list_is_empty (tests.test_purchase.InconvenientMatchTests.test_no_match_when_list_is_empty) ... ok
+test_similar_name_is_flagged (tests.test_purchase.InconvenientMatchTests.test_similar_name_is_flagged) ... ok
+test_unrelated_food_is_not_flagged (tests.test_purchase.InconvenientMatchTests.test_unrelated_food_is_not_flagged) ... 
+ok
+test_old_prompt_name_points_to_the_new_prompt (tests.test_purchase.PromptTests.test_old_prompt_name_points_to_the_new_p
+rompt) ... ok
+test_prompt_asks_for_chinese_output_and_shopping_list (tests.test_purchase.PromptTests.test_prompt_asks_for_chinese_out
+put_and_shopping_list) ... ok
+test_prompt_contains_the_priority_order (tests.test_purchase.PromptTests.test_prompt_contains_the_priority_order) ... o
+k
+test_prompt_does_not_claim_live_stock_or_prices (tests.test_purchase.PromptTests.test_prompt_does_not_claim_live_stock_
+or_prices) ... ok
+test_prompt_forbids_specialty_and_unavailable_food (tests.test_purchase.PromptTests.test_prompt_forbids_specialty_and_u
+navailable_food) ... ok
+test_prompt_respects_budget_equipment_and_time (tests.test_purchase.PromptTests.test_prompt_respects_budget_equipment_a
+nd_time) ... ok
+test_prompt_still_cares_about_nutrition_and_goal (tests.test_purchase.PromptTests.test_prompt_still_cares_about_nutriti
+on_and_goal) ... ok
+test_cooking_time_label (tests.test_purchase.PurchasePreferencesTests.test_cooking_time_label) ... ok
+test_empty_preferences_use_the_default_list (tests.test_purchase.PurchasePreferencesTests.test_empty_preferences_use_th
+e_default_list) ... ok
+test_hard_list (tests.test_purchase.PurchasePreferencesTests.test_hard_list) ... ok
+test_summary_mentions_the_key_facts (tests.test_purchase.PurchasePreferencesTests.test_summary_mentions_the_key_facts) 
+... ok
+test_user_list_replaces_the_default (tests.test_purchase.PurchasePreferencesTests.test_user_list_replaces_the_default) 
+... ok
+test_missing_new_fields_still_parse (tests.test_purchase.RecommendationSchemaTests.test_missing_new_fields_still_parse)
+ ... ok
+test_shopping_list_and_difficulty_are_parsed (tests.test_purchase.RecommendationSchemaTests.test_shopping_list_and_diff
+iculty_are_parsed) ... ok
+test_chinese_items_separated_by_space (tests.test_purchase.SplitIngredientTests.test_chinese_items_separated_by_space) 
+... ok
+test_conjunctions_are_separators (tests.test_purchase.SplitIngredientTests.test_conjunctions_are_separators) ... ok
+test_duplicates_and_blank_entries_are_removed (tests.test_purchase.SplitIngredientTests.test_duplicates_and_blank_entri
+es_are_removed) ... ok
+test_empty_input (tests.test_purchase.SplitIngredientTests.test_empty_input) ... ok
+test_english_list_keeps_multiword_items (tests.test_purchase.SplitIngredientTests.test_english_list_keeps_multiword_ite
+ms) ... ok
+test_full_width_punctuation_and_trailing_etc (tests.test_purchase.SplitIngredientTests.test_full_width_punctuation_and_
+trailing_etc) ... ok
+test_long_leftover_sentence_is_dropped (tests.test_purchase.SplitIngredientTests.test_long_leftover_sentence_is_dropped
+) ... ok
+test_natural_language_sentence (tests.test_purchase.SplitIngredientTests.test_natural_language_sentence) ... ok
+test_plain_list (tests.test_purchase.SplitIngredientTests.test_plain_list) ... ok
+test_female_bmr_matches_hand_calculation (tests.test_targets.BmrTests.test_female_bmr_matches_hand_calculation) ... ok
+test_male_bmr_matches_hand_calculation (tests.test_targets.BmrTests.test_male_bmr_matches_hand_calculation) ... ok
+test_unspecified_sex_uses_midpoint (tests.test_targets.BmrTests.test_unspecified_sex_uses_midpoint) ... ok
+test_goal_aliases (tests.test_targets.TargetTests.test_goal_aliases) ... ok
+test_lose_is_lower_and_gain_is_higher (tests.test_targets.TargetTests.test_lose_is_lower_and_gain_is_higher) ... ok
+test_lose_never_goes_below_bmr (tests.test_targets.TargetTests.test_lose_never_goes_below_bmr) ... ok
+test_macros_stay_within_energy_budget (tests.test_targets.TargetTests.test_macros_stay_within_energy_budget) ... ok
+test_maintain_keeps_tdee (tests.test_targets.TargetTests.test_maintain_keeps_tdee) ... ok
+test_activity_aliases (tests.test_targets.TdeeTests.test_activity_aliases) ... ok
+test_tdee_uses_activity_multiplier (tests.test_targets.TdeeTests.test_tdee_uses_activity_multiplier) ... ok
+test_delete_clears_the_env_file (tests.test_ui_api_key_flow.ApiKeyFallbackTest.test_delete_clears_the_env_file) ... ok
+test_key_is_written_to_env_file (tests.test_ui_api_key_flow.ApiKeyFallbackTest.test_key_is_written_to_env_file) ... ok
+test_settings_page_shows_env_source (tests.test_ui_api_key_flow.ApiKeyFallbackTest.test_settings_page_shows_env_source)
+ ... ok
+test_api_key_input_is_masked_by_default (tests.test_ui_api_key_flow.ApiKeyOnboardingTest.test_api_key_input_is_masked_b
+y_default) ... ok
+test_delete_key_clears_everything (tests.test_ui_api_key_flow.ApiKeyOnboardingTest.test_delete_key_clears_everything) .
+.. ok
+test_empty_submit_shows_chinese_hint (tests.test_ui_api_key_flow.ApiKeyOnboardingTest.test_empty_submit_shows_chinese_h
+int) ... ok
+test_first_run_shows_welcome_page (tests.test_ui_api_key_flow.ApiKeyOnboardingTest.test_first_run_shows_welcome_page) .
+.. ok
+test_key_is_usable_after_saving (tests.test_ui_api_key_flow.ApiKeyOnboardingTest.test_key_is_usable_after_saving) ... o
+k
+test_settings_page_is_chinese_and_hides_the_key (tests.test_ui_api_key_flow.ApiKeyOnboardingTest.test_settings_page_is_
+chinese_and_hides_the_key) ... ok
+test_settings_save_key_updates_status (tests.test_ui_api_key_flow.ApiKeyOnboardingTest.test_settings_save_key_updates_s
+tatus) ... ok
+test_settings_test_connection_reports_network_error (tests.test_ui_api_key_flow.ApiKeyOnboardingTest.test_settings_test
+_connection_reports_network_error) ... test api key failed: 无法连接到 DeepSeek API，请检查网络连接后重试。
+ok
+test_settings_test_connection_reports_success (tests.test_ui_api_key_flow.ApiKeyOnboardingTest.test_settings_test_conne
+ction_reports_success) ... ok
+test_skip_is_remembered_for_next_launch (tests.test_ui_api_key_flow.ApiKeyOnboardingTest.test_skip_is_remembered_for_ne
+xt_launch) ... ok
+test_submit_saves_key_and_moves_on (tests.test_ui_api_key_flow.ApiKeyOnboardingTest.test_submit_saves_key_and_moves_on)
+ ... ok
+test_submit_with_bad_key_reports_error_and_stays (tests.test_ui_api_key_flow.ApiKeyOnboardingTest.test_submit_with_bad_
+key_reports_error_and_stays) ... save and test api key failed: API Key 无效，请检查输入是否正确。
+ok
+test_welcome_text_is_chinese (tests.test_ui_api_key_flow.ApiKeyOnboardingTest.test_welcome_text_is_chinese) ... ok
+test_api_error_is_reported_and_does_not_crash (tests.test_ui_flow.MainWindowFlowTest.test_api_error_is_reported_and_doe
+s_not_crash) ... analyse text failed: 无法连接到 DeepSeek API，请检查网络连接后重试。
+ok
+test_api_status_never_shows_the_full_key (tests.test_ui_flow.MainWindowFlowTest.test_api_status_never_shows_the_full_ke
+y) ... ok
+test_editing_and_deleting_items_updates_totals (tests.test_ui_flow.MainWindowFlowTest.test_editing_and_deleting_items_u
+pdates_totals) ... ok
+test_first_run_shows_profile_setup (tests.test_ui_flow.MainWindowFlowTest.test_first_run_shows_profile_setup) ... ok
+test_history_page_lists_days_and_details (tests.test_ui_flow.MainWindowFlowTest.test_history_page_lists_days_and_detail
+s) ... ok
+test_image_analysis_is_stored_as_image_source (tests.test_ui_flow.MainWindowFlowTest.test_image_analysis_is_stored_as_i
+mage_source) ... ok
+test_recommendation_uses_remaining_amounts (tests.test_ui_flow.MainWindowFlowTest.test_recommendation_uses_remaining_am
+ounts) ... ok
+test_recommended_meal_is_logged_when_confirmed (tests.test_ui_flow.MainWindowFlowTest.test_recommended_meal_is_logged_w
+hen_confirmed) ... ok
+test_saving_profile_enables_dashboard_and_targets (tests.test_ui_flow.MainWindowFlowTest.test_saving_profile_enables_da
+shboard_and_targets) ... ok
+test_text_analysis_saves_meal_and_updates_totals (tests.test_ui_flow.MainWindowFlowTest.test_text_analysis_saves_meal_a
+nd_updates_totals) ... ok
+test_confirm_dialog_warns_about_risky_values (tests.test_ui_flow.WidgetTests.test_confirm_dialog_warns_about_risky_valu
+es) ... ok
+test_food_items_table_reports_bad_input (tests.test_ui_flow.WidgetTests.test_food_items_table_reports_bad_input) ... ok
+test_food_items_table_round_trip (tests.test_ui_flow.WidgetTests.test_food_items_table_round_trip) ... ok
+test_nutrition_bar_shows_over_target_message (tests.test_ui_flow.WidgetTests.test_nutrition_bar_shows_over_target_messa
+ge) ... ok
+test_a_key_that_does_not_look_like_a_deepseek_key_is_saved_with_a_warning (tests.test_ui_model_settings.AiSettingsWindo
+wTests.test_a_key_that_does_not_look_like_a_deepseek_key_is_saved_with_a_warning) ... ok
+test_a_well_formed_key_is_saved_without_a_warning (tests.test_ui_model_settings.AiSettingsWindowTests.test_a_well_forme
+d_key_is_saved_without_a_warning) ... ok
+test_connection_test_reports_a_bad_base_url_without_network_access (tests.test_ui_model_settings.AiSettingsWindowTests.
+test_connection_test_reports_a_bad_base_url_without_network_access) ... ok
+test_connection_test_uses_the_values_currently_in_the_form (tests.test_ui_model_settings.AiSettingsWindowTests.test_con
+nection_test_uses_the_values_currently_in_the_form) ... ok
+test_invalid_base_url_is_reported_and_nothing_is_saved (tests.test_ui_model_settings.AiSettingsWindowTests.test_invalid
+_base_url_is_reported_and_nothing_is_saved) ... ok
+test_reset_restores_the_defaults_and_keeps_the_api_key (tests.test_ui_model_settings.AiSettingsWindowTests.test_reset_r
+estores_the_defaults_and_keeps_the_api_key) ... ok
+test_saved_settings_are_used_by_the_next_ai_client (tests.test_ui_model_settings.AiSettingsWindowTests.test_saved_setti
+ngs_are_used_by_the_next_ai_client) ... ok
+test_saving_persists_and_applies_the_new_settings (tests.test_ui_model_settings.AiSettingsWindowTests.test_saving_persi
+sts_and_applies_the_new_settings) ... ok
+test_a_typed_model_name_is_used (tests.test_ui_model_settings.ModelSettingsFormTests.test_a_typed_model_name_is_used) .
+.. ok
+test_effort_is_disabled_while_thinking_is_off (tests.test_ui_model_settings.ModelSettingsFormTests.test_effort_is_disab
+led_while_thinking_is_off) ... ok
+test_effort_is_enabled_while_thinking_is_on (tests.test_ui_model_settings.ModelSettingsFormTests.test_effort_is_enabled
+_while_thinking_is_on) ... ok
+test_reset_button_emits_a_reset_request (tests.test_ui_model_settings.ModelSettingsFormTests.test_reset_button_emits_a_
+reset_request) ... ok
+test_save_payload_carries_every_edited_field (tests.test_ui_model_settings.ModelSettingsFormTests.test_save_payload_car
+ries_every_edited_field) ... ok
+test_status_and_busy_are_visible_feedback (tests.test_ui_model_settings.ModelSettingsFormTests.test_status_and_busy_are
+_visible_feedback) ... ok
+test_supported_model_hides_the_unsupported_hint (tests.test_ui_model_settings.ModelSettingsFormTests.test_supported_mod
+el_hides_the_unsupported_hint) ... ok
+test_switching_models_degrades_and_restores_the_preference (tests.test_ui_model_settings.ModelSettingsFormTests.test_sw
+itching_models_degrades_and_restores_the_preference) ... ok
+test_test_button_sends_the_current_form_values (tests.test_ui_model_settings.ModelSettingsFormTests.test_test_button_se
+nds_the_current_form_values) ... ok
+test_turning_thinking_off_greys_out_the_effort_slider (tests.test_ui_model_settings.ModelSettingsFormTests.test_turning
+_thinking_off_greys_out_the_effort_slider) ... ok
+test_unsupported_model_greys_out_thinking_and_explains_why (tests.test_ui_model_settings.ModelSettingsFormTests.test_un
+supported_model_greys_out_thinking_and_explains_why) ... ok
+test_dashboard_shows_the_purchase_summary (tests.test_ui_purchase_flow.PurchaseFlowTest.test_dashboard_shows_the_purcha
+se_summary) ... ok
+test_empty_easy_list_shows_the_default_hint (tests.test_ui_purchase_flow.PurchaseFlowTest.test_empty_easy_list_shows_th
+e_default_hint) ... ok
+test_forbidden_english_words_are_absent (tests.test_ui_purchase_flow.PurchaseFlowTest.test_forbidden_english_words_are_
+absent) ... ok
+test_form_reloads_saved_values (tests.test_ui_purchase_flow.PurchaseFlowTest.test_form_reloads_saved_values) ... ok
+test_inconvenient_ingredient_in_the_answer_is_flagged (tests.test_ui_purchase_flow.PurchaseFlowTest.test_inconvenient_i
+ngredient_in_the_answer_is_flagged) ... ok
+test_logging_a_recommended_meal_still_works (tests.test_ui_purchase_flow.PurchaseFlowTest.test_logging_a_recommended_me
+al_still_works) ... ok
+test_parsed_preview_counts_the_ingredients (tests.test_ui_purchase_flow.PurchaseFlowTest.test_parsed_preview_counts_the
+_ingredients) ... ok
+test_recommendation_card_shows_difficulty_and_shopping_list (tests.test_ui_purchase_flow.PurchaseFlowTest.test_recommen
+dation_card_shows_difficulty_and_shopping_list) ... ok
+test_recommendation_payload_carries_the_purchase_conditions (tests.test_ui_purchase_flow.PurchaseFlowTest.test_recommen
+dation_payload_carries_the_purchase_conditions) ... ok
+test_saving_preferences_clears_an_old_recommendation (tests.test_ui_purchase_flow.PurchaseFlowTest.test_saving_preferen
+ces_clears_an_old_recommendation) ... ok
+test_saving_purchase_preferences_persists_everything (tests.test_ui_purchase_flow.PurchaseFlowTest.test_saving_purchase
+_preferences_persists_everything) ... ok
+test_ui_text_is_chinese (tests.test_ui_purchase_flow.PurchaseFlowTest.test_ui_text_is_chinese) ... ok
+test_without_settings_the_default_common_ingredients_are_sent (tests.test_ui_purchase_flow.PurchaseFlowTest.test_withou
+t_settings_the_default_common_ingredients_are_sent) ... ok
+test_round_trip (tests.test_ui_purchase_flow.PurchasePreferencesDatabaseTest.test_round_trip) ... ok
+test_empty_key_is_rejected (tests.test_validation.ApiKeyShapeTests.test_empty_key_is_rejected) ... ok
+test_key_with_inner_whitespace_is_rejected (tests.test_validation.ApiKeyShapeTests.test_key_with_inner_whitespace_is_re
+jected) ... ok
+test_key_without_the_sk_prefix_is_rejected (tests.test_validation.ApiKeyShapeTests.test_key_without_the_sk_prefix_is_re
+jected) ... ok
+test_short_key_is_rejected (tests.test_validation.ApiKeyShapeTests.test_short_key_is_rejected) ... ok
+test_typical_deepseek_key_is_accepted (tests.test_validation.ApiKeyShapeTests.test_typical_deepseek_key_is_accepted) ..
+. ok
+test_a_number_must_stand_on_its_own (tests.test_validation.CoercionTests.test_a_number_must_stand_on_its_own)
+回归测试：不要从 "1e400" / "1_000" 里硬抠出一个 1。 ... ok
+test_confidence_percentages (tests.test_validation.CoercionTests.test_confidence_percentages) ... ok
+test_decimal_comma_still_works (tests.test_validation.CoercionTests.test_decimal_comma_still_works) ... ok
+test_garbage_is_rejected (tests.test_validation.CoercionTests.test_garbage_is_rejected) ... ok
+test_meal_type_normalisation (tests.test_validation.CoercionTests.test_meal_type_normalisation) ... ok
+test_missing_values (tests.test_validation.CoercionTests.test_missing_values) ... ok
+test_plain_numbers (tests.test_validation.CoercionTests.test_plain_numbers) ... ok
+test_thousands_separators_are_not_read_as_decimal_commas (tests.test_validation.CoercionTests.test_thousands_separators
+_are_not_read_as_decimal_commas) ... ok
+test_units_glued_to_the_number_still_work (tests.test_validation.CoercionTests.test_units_glued_to_the_number_still_wor
+k) ... ok
+test_absurd_protein_is_rejected (tests.test_validation.FoodItemTests.test_absurd_protein_is_rejected) ... ok
+test_alias_keys_are_accepted (tests.test_validation.FoodItemTests.test_alias_keys_are_accepted) ... ok
+test_impossible_energy_density_is_rejected (tests.test_validation.FoodItemTests.test_impossible_energy_density_is_rejec
+ted) ... ok
+test_missing_name_is_rejected (tests.test_validation.FoodItemTests.test_missing_name_is_rejected) ... ok
+test_missing_optional_numbers_default_to_zero (tests.test_validation.FoodItemTests.test_missing_optional_numbers_defaul
+t_to_zero) ... ok
+test_negative_calories_are_rejected (tests.test_validation.FoodItemTests.test_negative_calories_are_rejected) ... ok
+test_numbers_as_text_are_accepted (tests.test_validation.FoodItemTests.test_numbers_as_text_are_accepted) ... ok
+test_per_100g_scaling (tests.test_validation.FoodItemTests.test_per_100g_scaling) ... ok
+test_reference_payload_is_valid (tests.test_validation.FoodItemTests.test_reference_payload_is_valid) ... ok
+test_to_record_fields_matches_database_columns (tests.test_validation.FoodItemTests.test_to_record_fields_matches_datab
+ase_columns) ... ok
+test_food_analysis_accepts_items_alias (tests.test_validation.ResultModelTests.test_food_analysis_accepts_items_alias) 
+... ok
+test_recommendation_model (tests.test_validation.ResultModelTests.test_recommendation_model) ... ok
+
+----------------------------------------------------------------------
+Ran 362 tests in 49.878s
+
+OK
